@@ -7,6 +7,8 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizContainer from '../src/components/QuizContainer';
 import Widget from '../src/components/Widget';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 
@@ -18,6 +20,8 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>AluraQuiz - Game of Thrones Edition</title>
+        <meta property="og:image" content={db.bg} key="ogimage" />
+
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -26,20 +30,20 @@ export default function Home() {
             <h1>Game of Thrones</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (e) {
+            <form onSubmit={(e) => {
               e.preventDefault();
               router.push('/quiz?name={name}');
-            }}>
-              <input
+            }}
+            >
+              <Input
+                name="nomeDoUsuario"
                 placeholder="Diz ai seu nome"
-                onChange={function (e) {
-                  setName(e.target.value);
-                }}
+                onChange={(e) => { setName(e.target.value); }}
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

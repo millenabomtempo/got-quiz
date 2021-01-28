@@ -4,25 +4,63 @@
   "description": "Quiz sobre Game of Thrones",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Escolha a alternativa que contem três personagens que foram Mão do Rei.",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Tyron Lannister, Cersei Lannister e Catelyn Stark.",
+        "Eddard Stark, Tywin Lannister e Tyrion Lannister.",
+        "Cersei Lannister, Tyrion Lannister e Tywin Lannister.",
+        "Robert Baratheon, Aerys II Targaryen e Joffrey Baratheon."
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Qual desses personagens é filho de Catelyn Tully?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Jon Snow",
+        "Joffrey Baratheon",
+        "Robin Tully",
+        "Bran Stark"
+      ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Existe uma casa de Westeros que o seu brasão é um falcão sobre um campo azul-celeste. Qual é essa casa",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Lannister",
+        "Greyjoy",
+        "Arryn",
+        "Martell"
+      ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Na sucessão do trono, quem deveria ser o rei ou rainha após a morte de Aerys II Targaryen, o Rei Louco?",
+      "description": "",
       "answer": 0,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Viserys Targaryen",
+        "Rhaegar Targeryen",
+        "Daenerys Targeryen",
+        "Aegon Targeryen"
+      ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Qual dessas famílias não é um dos Sete Reinos?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Stark",
+        "Baratheon",
+        "Snow",
+        "Tully"
       ]
     }
   ],
