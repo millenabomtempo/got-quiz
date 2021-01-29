@@ -154,7 +154,6 @@ export default function QuizPage() {
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
-  
 
   function addResult(result) {
     // results.push(result);
