@@ -48,7 +48,6 @@ export default function Home() {
           <Widget.Content>
             <form onSubmit={(e) => {
               e.preventDefault();
-              localStorage.setItem('name', name);
               router.push('/quiz?name={name}');
             }}
             >
