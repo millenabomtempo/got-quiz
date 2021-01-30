@@ -48,7 +48,10 @@ export default function Home() {
           <Widget.Content>
             <form onSubmit={(e) => {
               e.preventDefault();
-              router.push('/quiz?name={name}');
+              router.push({
+                pathname: '/quiz',
+                query: { name },
+              });
             }}
             >
               <Input

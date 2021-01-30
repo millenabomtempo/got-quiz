@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import Router from 'next/router';
+import { useRouter } from 'next/router';
 import db from '../../db.json';
 import QuizBackground from '../../src/components/QuizBackground';
 import QuizLogo from '../../src/components/QuizLogo';
@@ -11,9 +11,9 @@ import AlternativesForm from '../../src/components/AlternativesForm';
 import Button from '../../src/components/Button';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
 
-const name = Router.query;
-
 function ResultWidget({ results }) {
+  const router = useRouter();
+  const { name } = router.query;
   return (
     <Widget>
       <Widget.Header>
@@ -47,6 +47,8 @@ function ResultWidget({ results }) {
 }
 
 function LoadingWidget() {
+  const router = useRouter();
+  const { name } = router.query;
   return (
     <Widget>
       <Widget.Header>
