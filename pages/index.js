@@ -22,8 +22,13 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>AluraQuiz - Game of Thrones Edition</title>
+
+        <meta property="og:title" content="AluraQuiz - Game of Thrones Edition" />
+        <meta property="og:site_name" content="Quiz - Game of Thrones" />
+        <meta property="og:descripton" content="Quiz sobre Game of Thrones" />
         <meta property="og:image" content={db.bg} key="ogimage" />
 
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -43,6 +48,7 @@ export default function Home() {
           <Widget.Content>
             <form onSubmit={(e) => {
               e.preventDefault();
+              localStorage.setItem('name', name);
               router.push('/quiz?name={name}');
             }}
             >

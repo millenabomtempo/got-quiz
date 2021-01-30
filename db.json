@@ -62,6 +62,66 @@
         "Snow",
         "Tully"
       ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Qual o lema da Casa Lannister?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Todo Lannister paga suas dívidas",
+        "Tão rico quanto um Lannister",
+        "Nossa é a Fúria",
+        "Ouça-me Rugir"
+      ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Qual o nome do irmão de Ned que faz parte da Patrulha da Noite?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Benjamin Stark",
+        "Benjen Stark",
+        "Brandon Stark",
+        "Bryan Stark"
+      ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "",
+      "description": "Quem é conhecido como Regicida?",
+      "answer": 2,
+      "alternatives": [
+        "Tyrion Lannister",
+        "Varys",
+        "Jaime Lannister",
+        "Gregor Clegane"
+      ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Qual o significado de Valar Morghulis?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Todos os homens devem servir",
+        "Todos os homens devem viver",
+        "Todos os homens devem morrer",
+        "Todos os homens devem matar"
+      ]
+    },
+    {
+      "image": "http://38.media.tumblr.com/a2b6cd8187ccaf1ec673ac710cdbb4d4/tumblr_n9pfebK3hk1s6bxzqo1_500.gif",
+      "title": "Qual o nome do lobo de estimação de Jon Snow?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Fantasma",
+        "Verão",
+        "Vento cinzento",
+        "Nymeria"
+      ]
     }
   ],
   "external": [

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
@@ -10,6 +11,8 @@ import AlternativesForm from '../../src/components/AlternativesForm';
 import Button from '../../src/components/Button';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
 
+const name = localStorage.getItem('name');
+
 function ResultWidget({ results }) {
   return (
     <Widget>
@@ -19,7 +22,7 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
+          {`${name} Você acertou`}
           {' '}
           {results.filter((x) => x).length}
           {' '}
@@ -47,11 +50,11 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        <p>Você não sabe nada, </p>
+        {`Você não sabe nada, ${name}`}
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        Carregando quiz...
       </Widget.Content>
     </Widget>
   );
@@ -66,6 +69,7 @@ function QuestionWidget({
 }) {
   const [selectedAlternative, setSelectedAlternative] = useState(undefined);
   const [isQuestionSubmited, setIsQuestionSubmited] = useState(false);
+  const [checkedRadio, setCheckedRadio] = useState();
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
@@ -105,6 +109,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
+              setCheckedRadio();
             }, 2 * 1000);
           }}
         >
@@ -125,6 +130,7 @@ function QuestionWidget({
                   id={alternativeId}
                   name={questionId}
                   type="radio"
+                  checked={setCheckedRadio}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
                 />
                 {alternative}
