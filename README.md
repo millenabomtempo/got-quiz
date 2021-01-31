@@ -1,78 +1,60 @@
-# Example app with styled-components
+# AluraQuiz - Game of Thrones Edition
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+Quiz created during Alura's Imersão React Next.js
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+# :pushpin: Table of contents
 
-## Deploy your own
+- [Technologies](#computer-technologies)
+- [How to run](#construction_worker-how-to-run)
+- [ToDo](#memo-todo)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+# :computer: Technologies
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+This project was made using the following technologies:
 
-## How to use
+<ul>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
+  <li><a href="https://pt-br.reactjs.org/">React</a></li>
+  <li><a href="https://styled-components.com/">styled-components</a></li>
+  <li><a href="https://nextjs.org/">Next.js</a></li>
+</ul>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+# :construction_worker: How to run
+
+### :computer: Downloading project
 
 ```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
+# Clone repository into your machine
+$ git clone https://github.com/millenabomtempo/got-quiz.git
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### 💻 Running project on a web browser
 
-### Try it on CodeSandbox
+```bash
+# Install dependencies
+$ yarn install or npm install
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
+# Run application
+$ yarn dev or npm run dev
 ```
 
-**pages/index.js**
+Front-end UX available at http://localhost:3000/.
 
-```javascript
-import StyledLink from '../components/StyledLink'
+Project also avaliable at https://got-quiz.millenabomtempo.vercel.app/
 
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
+# :memo: ToDo
 
-</details>
+### LOTS
+
+- Solve the point count using a bitset (or bitmap)
+- Refactor regex
+- Refactor quiz component page
+- Leave the buttons for others quizzes disabled until the user has filled in the name in the input.
+
+# :closed_book: License
+
+Released in 2021.
+
+Made with ❤ to all my fellows book nerds. [Millena Bomtempo](https://github.com/millenabomtempo)
+
+Give it a ⭐️ if this project helped you!
